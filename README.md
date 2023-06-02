@@ -75,14 +75,14 @@ status(500): { message: "Cant access the database" }
 
 | Params   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. E-mail do usuário. |
+| `id`      | `string` | **Obrigatório**. Id do usuário. |
 | `phone`      | `?` | **Obrigatório**. Telefone do usuário. |
 
 
 | File   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `buffer`      | `?` | **Obrigatório**. ?. |
-| `mimetype`      | `?` | **Obrigatório**. Telefone do usuário. |
+| `mimetype`      | `?` | **Obrigatório**. ?. |
 
 #### Retorna 3 possíveis respostas:
 
