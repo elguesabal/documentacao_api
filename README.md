@@ -36,9 +36,48 @@ status(400): { message: "Invalid or expired code!" }
 
 status(202): { message: "Continue with customer registration" }
 
-status(403): myuser
+status(403): {
+    "_id": "id",
+    "name": "name",
+    "lastName": "lastName",
+    "about": "about",
+    "location": "location",
+    "birth_date": "birth_date",
+    "preference": [
+        "preference"
+    ],
+    "gender": "gender",
+    "phone": "phone",
+    "email": "email",
+    "photo_profile": "photo_profile",
+    "photos": [
+        ""
+    ],
+    "course": "course",
+    "complete_register": true
+}
 
-status(200): myuser
+status(200): {
+    "_id": "id",
+    "name": "name",
+    "lastName": "lastName",
+    "about": "about",
+    "location": "location",
+    "birth_date": "birth_date",
+    "preference": [
+        "preference"
+    ],
+    "gender": "gender",
+    "phone": "phone",
+    "email": "email",
+    "photo_profile": "photo_profile",
+    "photos": [
+        "photo",
+        "photo"
+    ],
+    "course": "course",
+    "complete_register": true
+}
 
 status(500): Unexpected server error
 
@@ -88,6 +127,25 @@ status(500): { message: "Cant access the database" }
 
 status(400): { error: "Nenhuma imagem fornecida" }
 
-status(201): myuser
+status(201): {
+    "_id": "id",
+    "name": "name",
+    "lastName": "lastName",
+    "about": "about",
+    "location": "location",
+    "birth_date": "birth_date",
+    "preference": [
+        "preference"
+    ],
+    "gender": "gender",
+    "phone": "phone",
+    "email": "email",
+    "photo_profile": "photo_profile",
+    "photos": [
+        ""
+    ],
+    "course": "course",
+    "complete_register": true
+}
 
 status(500): { message: "Cant access the database" }
