@@ -92,10 +92,10 @@ status(500): Unexpected server error
 | Body   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `email`      | `string` | **Obrigatório**. E-mail do usuário. |
-| `phone`      | `?` | **Obrigatório**. Telefone do usuário. |
+| `phone`      | `string` | **Obrigatório**. Telefone do usuário. |
 | `name`      | `string` | **Obrigatório**. Primeiro nome do usuário. |
 | `lastName`      | `string` | **Obrigatório**. Último nome do usuário. |
-| `birth_date`      | `?` | **Obrigatório**. Data de nascimento do usuário. |
+| `birth_date`      | `number` | **Obrigatório**. Data de nascimento do usuário. |
 | `gender`      | `string` | **Obrigatório**. Gênero do usuário. |
 
 #### Retorna 2 possíveis respostas:
@@ -115,7 +115,6 @@ status(500): { message: "Cant access the database" }
 | Params   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. Id do usuário. |
-| `phone`      | `?` | **Obrigatório**. Telefone do usuário. |
 
 
 | File   | Tipo       | Descrição                                   |
@@ -148,4 +147,4 @@ status(201): {
     "complete_register": true
 }
 
-status(500): { message: "Cant access the database" }
+status(500): Unexpected server error
