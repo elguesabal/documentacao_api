@@ -37,46 +37,45 @@ status(400): { message: "Invalid or expired code!" }
 status(202): { message: "Continue with customer registration" }
 
 status(403): {
-    "_id": "id",
-    "name": "name",
-    "lastName": "lastName",
-    "about": "about",
-    "location": "location",
-    "birth_date": "birth_date",
-    "preference": [
-        "preference"
+    _id: "string",
+    name: "string",
+    lastName: "string",
+    about: "string",
+    location: "string",
+    birth_date: "string",
+    preference: [
+        "string"
     ],
-    "gender": "gender",
-    "phone": "phone",
-    "email": "email",
-    "photo_profile": "photo_profile",
-    "photos": [
-        ""
+    gender: "string",
+    phone: "string",
+    email: "string",
+    photo_profile: "string",
+    photos: [
+        "string", ..., "string"
     ],
-    "course": "course",
-    "complete_register": true
+    course: "string",
+    complete_register: boolean
 }
 
 status(200): {
-    "_id": "id",
-    "name": "name",
-    "lastName": "lastName",
-    "about": "about",
-    "location": "location",
-    "birth_date": "birth_date",
-    "preference": [
-        "preference"
+    _id: "string",
+    name: "string",
+    lastName: "string",
+    about: "string",
+    location: "string",
+    birth_date: "string",
+    preference: [
+        "string", ..., "string"
     ],
-    "gender": "gender",
-    "phone": "phone",
-    "email": "email",
-    "photo_profile": "photo_profile",
-    "photos": [
-        "photo",
-        "photo"
+    gender: "string",
+    phone: "string",
+    email: "string",
+    photo_profile: "string",
+    photos: [
+        "string", ..., "string"
     ],
-    "course": "course",
-    "complete_register": true
+    course: "string",
+    complete_register: boolean
 }
 
 status(500): Unexpected server error
@@ -91,8 +90,8 @@ status(500): Unexpected server error
 
 | Body   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `email`      | `string` | **Obrigatório**. E-mail do usuário. |
-| `phone`      | `string` | **Obrigatório**. Telefone do usuário. |
+| `email`      | `string` | **Obrigatório**. E-mail do usuário ou string vazia. |
+| `phone`      | `string` | **Obrigatório**. Telefone do usuário ou string vazia. |
 | `name`      | `string` | **Obrigatório**. Primeiro nome do usuário. |
 | `lastName`      | `string` | **Obrigatório**. Último nome do usuário. |
 | `birth_date`      | `number` | **Obrigatório**. Data de nascimento do usuário. |
@@ -127,24 +126,24 @@ status(500): { message: "Cant access the database" }
 status(400): { error: "Nenhuma imagem fornecida" }
 
 status(201): {
-    "_id": "id",
-    "name": "name",
-    "lastName": "lastName",
-    "about": "about",
-    "location": "location",
-    "birth_date": "birth_date",
-    "preference": [
-        "preference"
+    _id: "string",
+    name: "string",
+    lastName: "string",
+    about: "string",
+    location: "string",
+    birth_date: "string",
+    preference: [
+        "string", ..., "string"
     ],
-    "gender": "gender",
-    "phone": "phone",
-    "email": "email",
-    "photo_profile": "photo_profile",
-    "photos": [
-        ""
+    gender: "string",
+    phone: "string",
+    email: "string",
+    photo_profile: "string",
+    photos: [
+        "string", ..., "string"
     ],
-    "course": "course",
-    "complete_register": true
+    course: "string",
+    complete_register: boolean
 }
 
 status(500): Unexpected server error
