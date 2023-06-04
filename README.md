@@ -115,11 +115,9 @@ status(500): { message: "Cant access the database" }
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. Id do usuário. |
 
-
 | File   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `buffer`      | `?` | **Obrigatório**. ?. |
-| `mimetype`      | `?` | **Obrigatório**. ?. |
+| `image`      | `file` | **Obrigatório**. Imagem de perfil do usuário. |
 
 #### Retorna 3 possíveis respostas:
 
