@@ -13,9 +13,19 @@
 
 #### Retorna 2 possíveis respostas:
 
-status(200): { message: "We sent a confirmation code to your email!" }
+status(200): 
+```json
+{ 
+  "message": "We sent a confirmation code to your email!"
+}
+```
 
-status(400): { message: "Enter an existing email!" }
+status(400): 
+```json
+{ 
+  "message": "Enter an existing email!"
+}
+```
 
 #
 
@@ -32,51 +42,67 @@ status(400): { message: "Enter an existing email!" }
 
 #### Retorna 5 possíveis respostas:
 
-status(400): { message: "Invalid or expired code!" }
+status(400): 
+```json
+{
+  "message": "Invalid or expired code!"
+}
+```
 
-status(202): { message: "Continue with customer registration" }
+status(202): 
+```json
+{
+  "message": "Continue with customer registration"
+}
+```
 
-status(403): {
-    _id: "string",
-    name: "string",
-    lastName: "string",
-    about: "string",
-    location: "string",
-    birth_date: "string",
-    preference: [
+status(403): 
+```json
+{
+    "_id": "string",
+    "name": "string",
+    "lastName": "string",
+    "about": "string",
+    "location": "string",
+    "birth_date": "string",
+    "preference": [
         "string"
     ],
-    gender: "string",
-    phone: "string",
-    email: "string",
-    photo_profile: "string",
-    photos: [
-        "string", ..., "string"
+    "gender": "string",
+    "phone": "string",
+    "email": "string",
+    "photo_profile": "string",
+    "photos": [
+        "string", "...", "string"
     ],
-    course: "string",
-    complete_register: boolean
+    "course": "string",
+    "complete_register": "boolean"
 }
+```
 
-status(200): {
-    _id: "string",
-    name: "string",
-    lastName: "string",
-    about: "string",
-    location: "string",
-    birth_date: "string",
-    preference: [
-        "string", ..., "string"
+status(200): 
+```json
+{
+    "_id": "string",
+    "name": "string",
+    "lastName": "string",
+    "about": "string",
+    "location": "string",
+    "birth_date": "string",
+    "preference": [
+        "string", "...", "string"
     ],
-    gender: "string",
-    phone: "string",
-    email: "string",
-    photo_profile: "string",
-    photos: [
-        "string", ..., "string"
+    "gender": "string",
+    "phone": "string",
+    "email": "string",
+    "photo_profile": "string",
+    "photos": [
+        "string", "...", "string"
     ],
-    course: "string",
-    complete_register: boolean
+    "course": "string",
+    "complete_register": "boolean"
 }
+```
 
 status(500): Unexpected server error
 
@@ -99,9 +125,19 @@ status(500): Unexpected server error
 
 #### Retorna 2 possíveis respostas:
 
-status(200): { id: id }
+status(200): 
+```json
+{
+  "id": "id"
+}
+```
 
-status(500): { message: "Cant access the database" }
+status(500): 
+```json
+{
+  "message": "Cant access the database"
+}
+```
 
 #
 
@@ -121,27 +157,35 @@ status(500): { message: "Cant access the database" }
 
 #### Retorna 3 possíveis respostas:
 
-status(400): { error: "Nenhuma imagem fornecida" }
-
-status(201): {
-    _id: "string",
-    name: "string",
-    lastName: "string",
-    about: "string",
-    location: "string",
-    birth_date: "string",
-    preference: [
-        "string", ..., "string"
-    ],
-    gender: "string",
-    phone: "string",
-    email: "string",
-    photo_profile: "string",
-    photos: [
-        "string", ..., "string"
-    ],
-    course: "string",
-    complete_register: boolean
+status(400): 
+```json
+{
+  error: "Nenhuma imagem fornecida"
 }
+```
+
+status(201): 
+```json
+{
+    "_id": "string",
+    "name": "string",
+    "lastName": "string",
+    "about": "string",
+    "location": "string",
+    "birth_date": "string",
+    "preference": [
+        "string", "...", "string"
+    ],
+    "gender": "string",
+    "phone": "string",
+    "email": "string",
+    "photo_profile": "string",
+    "photos": [
+        "string", "...", "string"
+    ],
+    "course": "string",
+    "complete_register": "boolean"
+}
+```
 
 status(500): Unexpected server error
