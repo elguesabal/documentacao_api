@@ -19,6 +19,7 @@ status(200):
   "message": "We sent a confirmation code to your email!"
 }
 ```
+<br/>
 
 status(400): 
 ```json
@@ -48,6 +49,7 @@ status(400):
   "message": "Invalid or expired code!"
 }
 ```
+<br/>
 
 status(202): 
 ```json
@@ -55,6 +57,7 @@ status(202):
   "message": "Continue with customer registration"
 }
 ```
+<br/>
 
 status(403): 
 ```json
@@ -79,6 +82,7 @@ status(403):
     "complete_register": "boolean"
 }
 ```
+<br/>
 
 status(200): 
 ```json
@@ -103,6 +107,7 @@ status(200):
     "complete_register": "boolean"
 }
 ```
+<br/>
 
 status(500): Unexpected server error
 
@@ -131,6 +136,7 @@ status(200):
   "id": "id"
 }
 ```
+<br/>
 
 status(500): 
 ```json
@@ -163,6 +169,7 @@ status(400):
   "error": "Nenhuma imagem fornecida"
 }
 ```
+<br/>
 
 status(201): 
 ```json
@@ -187,5 +194,6 @@ status(201):
     "complete_register": "boolean"
 }
 ```
+<br/>
 
 status(500): Unexpected server error
