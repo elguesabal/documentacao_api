@@ -74,7 +74,10 @@ status(403):
     "gender": "string",
     "phone": "string",
     "email": "string",
-    "photo_profile": "string",
+    "photo_profile": {
+      "url": "string",
+      "id": "string"
+     },
     "photos": [
         "string", "...", "string"
     ],
@@ -189,7 +192,10 @@ status(201):
     "gender": "string",
     "phone": "string",
     "email": "string",
-    "photo_profile": "string",
+    "photo_profile": {
+      "url": "string",
+      "id": "string"
+     },
     "photos": [
         "string", "...", "string"
     ],
