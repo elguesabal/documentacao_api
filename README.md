@@ -160,7 +160,7 @@ status(500):
 status(400): 
 ```json
 {
-  error: "Nenhuma imagem fornecida"
+  "error": "Nenhuma imagem fornecida"
 }
 ```
 
