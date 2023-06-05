@@ -39,7 +39,7 @@ status(400):
 | Body  | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `email`      | `string` | **Obrigatório**. E-mail que recebeu o código. |
-| `codigo`      | `number` | **Obrigatório**. Código recebido pelo e-mail. |
+| `code`      | `number` | **Obrigatório**. Código recebido pelo e-mail. |
 
 #### Retorna 5 possíveis respostas:
 
