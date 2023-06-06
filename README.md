@@ -1,22 +1,30 @@
-
 ## Documentação da API
 
-#### Envia um código por e-mail para válidação
+#### Envia um código por e-mail ou celular para válidação
 
 ```http
-  POST /send_email
+  POST /send_code
 ```
 
 | Body   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `email` | `string` | **Obrigatório**. E-mail que receberá o código de verificação. |
+| `email` | `string` | **Opcional caso "phone" esteja preenchido**. E-mail que receberá o código de verificação. |
+| `phone` | `string` | **Opcional caso "email" esteja preenchido**. Número que receberá o código de verificação. |
 
-#### Retorna 2 possíveis respostas:
+#### Retorna 3 possíveis respostas:
 
 status(200): 
 ```json
 { 
   "message": "We sent a confirmation code to your email!"
+}
+```
+<br/>
+
+status(200): 
+```json
+{ 
+  "message": "We sent a confirmation code to your phone!"
 }
 ```
 <br/>
@@ -33,12 +41,13 @@ status(400):
 #### Confirma a existencia do código no database
 
 ```http
-  POST /check_email
+  POST /check_code
 ```
 
 | Body  | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `email`      | `string` | **Obrigatório**. E-mail que recebeu o código. |
+| `email`      | `string` | **Opcional caso "phone" esteja preenchido**. E-mail que recebeu o código. |
+| `phone`      | `string` | **Opcional caso "email" esteja preenchido**. Número que recebeu o código. |
 | `code`      | `number` | **Obrigatório**. Código recebido pelo e-mail. |
 
 #### Retorna 5 possíveis respostas:
@@ -161,7 +170,7 @@ status(500):
 
 | Params   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. Id do usuário. |
+| `id_user`      | `string` | **Obrigatório**. Id do usuário. |
 
 | File   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
