@@ -122,7 +122,7 @@ status(500): Unexpected server error
 #### Primeira etapa do registro
 
 ```http
-  PATCH /register_part1
+  POST /register_part1
 ```
 
 | Body   | Tipo       | Descrição                                   |
@@ -156,7 +156,7 @@ status(500):
 #### Segunda etapa do registro
 
 ```http
-  POST /register_part2/:id
+  PATCH /register_part2/:id
 ```
 
 | Params   | Tipo       | Descrição                                   |
