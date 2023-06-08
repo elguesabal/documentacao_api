@@ -15,7 +15,7 @@
 
 status(200): 
 ```json
-{ 
+"data": { 
   "message": "We sent a confirmation code to your email!"
 }
 ```
@@ -23,7 +23,7 @@ status(200):
 
 status(200): 
 ```json
-{ 
+"data": { 
   "message": "We sent a confirmation code to your phone!"
 }
 ```
@@ -31,7 +31,7 @@ status(200):
 
 status(400): 
 ```json
-{ 
+"data": { 
   "message": "Enter an existing email!"
 }
 ```
@@ -54,7 +54,7 @@ status(400):
 
 status(400): 
 ```json
-{
+"data": {
   "message": "Invalid or expired code!"
 }
 ```
@@ -62,7 +62,11 @@ status(400):
 
 status(202): 
 ```json
-{
+"headers": {
+  "auth-token": "string"
+}
+
+"data": {
   "message": "Continue with customer registration"
 }
 ```
@@ -70,7 +74,7 @@ status(202):
 
 status(403): 
 ```json
-{
+"data": {
     "_id": "string",
     "name": "string",
     "lastName": "string",
@@ -98,7 +102,7 @@ status(403):
 
 status(200): 
 ```json
-{
+"data": {
     "_id": "string",
     "name": "string",
     "lastName": "string",
@@ -147,7 +151,7 @@ status(500): Unexpected server error
 
 status(200): 
 ```json
-{
+"data": {
   "id": "id"
 }
 ```
@@ -155,7 +159,7 @@ status(200):
 
 status(500): 
 ```json
-{
+"data": {
   "message": "Cant access the database"
 }
 ```
@@ -180,7 +184,7 @@ status(500):
 
 status(400): 
 ```json
-{
+"data": {
   "error": "Nenhuma imagem fornecida"
 }
 ```
@@ -188,7 +192,11 @@ status(400):
 
 status(201): 
 ```json
-{
+"headers": {
+  "auth-token": "string"
+}
+
+"data": {
     "_id": "string",
     "name": "string",
     "lastName": "string",
